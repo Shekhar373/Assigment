@@ -23,15 +23,15 @@ const Review = () => {
   ];
 
   return (
-    <div className="h-[60vh] w-full relative bg-[linear-gradient(180deg,rgba(242,253,255,1),rgba(200,241,255,1))]">
-      <div className="h-[60vh] w-full">
+    <div className="h-[90vh] lg:h-[60vh] w-full relative bg-[linear-gradient(180deg,rgba(242,253,255,1),rgba(200,241,255,1))]">
+      <div className="h-[90vh] lg:h-[60vh] w-full">
         <img src="/About-assets/3d-ice.png" className="w-full h-full" />
 
         {/* overlay */}
         <div className="absolute inset-0 bg-white/60"></div>
       </div>
 
-      <div className="h-full w-full absolute top-0 z-10 flex flex-col justify-center items-center">
+      <div className="h-full w-full absolute top-0 z-10 flex flex-col lg:justify-center items-center">
         <svg
           className=""
           xmlns="http://www.w3.org/2000/svg"
@@ -53,22 +53,22 @@ const Review = () => {
           <h1 className="text-sm font-medium text-[#165FF5]">REVIEW</h1>
           <div className="h-[2px] w-7 bg-[#165FF5]"></div>
         </div>
-        <h1 className="lobster text-[3.5vw]">
+        <h1 className="lobster text-[8vw] lg:text-[3.5vw]">
           What Our <span className="text-[#165FF5]">Visitors</span> Says
         </h1>
-        <div className="flex gap-[5vw] pt-10">
+        <div className="flex lg:flex-row flex-col gap-[5vw] pt-10">
           {reviewArr.map((review, idx) => {
             return (
               <div
                 key={idx}
                 className="p-0.5 rounded-3xl bg-linear-to-r from-[rgba(21,92,238,1)] to-[rgba(0,26,69,1)]"
               >
-                <div className="h-[20vh] w-[25vw] px-10 flex flex-col items-center rounded-3xl bg-[linear-gradient(to_top,rgba(192,236,250,1),rgba(229,248,255,1),rgba(248,247,250,1))] ">
+                <div className="h-[20vh] w-[80vw] lg:w-[25vw] px-10 flex flex-col items-center rounded-3xl bg-[linear-gradient(to_top,rgba(192,236,250,1),rgba(229,248,255,1),rgba(248,247,250,1))] ">
                   <div className="text-xs flex items-center font-medium h-1/2 pt-5">
                     <h1>{review.text}</h1>
                   </div>
                   <div className="w-full h-1/2 flex items-center gap-2">
-                    <img className="h-[5vh] w-[3vw] rounded-full object-cover" src={review.img} alt="" />
+                    <img className="h-[30px] w-[30px] rounded-full object-cover" src={review.img} alt="" />
                     <div className=" flex flex-col  justify-center items-start">
                       <h1 className="text-sm font-bold">{review.Name}</h1>
                       <h3 className="text-xs font-medium">{review.city}</h3>

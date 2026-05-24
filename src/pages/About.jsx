@@ -103,7 +103,7 @@ const About = () => {
 
   return (
     <>
-      <div className="min-h-screen w-full bg-[linear-gradient(180deg,rgba(238,253,255,1),rgba(183,235,254,1),rgba(248,245,255,1))] relative">
+      <div className="h-screen w-full bg-[linear-gradient(180deg,rgba(238,253,255,1),rgba(183,235,254,1),rgba(248,245,255,1))] relative">
         <div className="relative h-screen w-full">
           <img src="/footer/footer-background.jpg" className="w-full h-full" />
 
@@ -112,14 +112,14 @@ const About = () => {
         </div>
         <div>
           <img
-            className="h-[60vh] w-[40vw] rotate-y-180 object-cover absolute z-20 top-[20vh] -left-10"
+            className="h-[20vh] lg:h-[60vh] w-[40vw] rotate-y-180 lg:object-cover absolute z-20 top-[55vh] lg:top-[20vh] lg:-left-10"
             src="/About-assets/about-house.png"
             alt=""
           />
         </div>
         <div>
           <img
-            className="h-[25vh] w-[10vw] object-cover absolute z-20 bottom-[20vh] left-[10vw]"
+            className="h-[10vh] lg:h-[25vh] w-[15vw] lg:w-[10vw] lg:object-cover absolute z-20 bottom-[25vh] lg:bottom-[20vh] left-[10vw]"
             src="/About-assets/blue-penguin.png"
             alt=""
           />
@@ -141,12 +141,12 @@ const About = () => {
        
         <div>
         <img
-          className="h-[15vh] w-[10vw] absolute right-0 top-[50vh]"
+          className="h-[10vh] lg:h-[15vh] w-[15vw] lg:w-[10vw] absolute right-0 top-[55vh] lg:top-[50vh]"
           src="/Hero-assets/tree.png"
           alt="Tree"
         />
         <img
-          className="h-[15vh] w-[10vw] absolute left-[25vw] top-[50vh]"
+          className="h-[10vh] lg:h-[15vh] w-[15vw] lg:w-[10vw] absolute left-[25vw] top-[55vh] lg:top-[50vh]"
           src="/Hero-assets/tree.png"
           alt="Tree"
         />
@@ -160,7 +160,7 @@ const About = () => {
         </div>
         <div>
           <img
-            className="h-[50vh] w-[15vw] object-cover absolute z-10 bottom-[30vh] -left-25"
+            className="h-[25vh] lg:h-[50vh] w-[15vw] object-cover absolute z-10 bottom-[30vh] -left-25"
             src="/About-assets/about-tree.png"
             alt=""
           />
@@ -174,12 +174,12 @@ const About = () => {
         </div>
         <div>
           <img
-            className="h-[30vh] w-[20vw] absolute z-10 bottom-[5vh] right-5"
+            className="h-[15vh] lg:h-[30vh] w-[25vw] lg:w-[20vw] absolute z-10 bottom-[10vh] lg:bottom-[5vh] right-5"
             src="/About-assets/penguin.png"
             alt=""
           />
         </div>
-        <div className="h-[80vh] w-[40vw] flex flex-col items-center  gap-5 absolute top-[10vh] right-[15vw]">
+        <div className="h-[80vh] w-screen lg:w-[40vw] flex flex-col items-center  gap-5 absolute top-5 lg:top-[10vh] lg:right-[15vw]">
           <div className=" flex flex-col items-center">
             <svg
               className=""
@@ -203,8 +203,8 @@ const About = () => {
               <div className="h-[2px] w-7 bg-[#165FF5]"></div>
             </div>
           </div>
-          <div>
-            <h1 className="lobster text-[3.5vw] [text-shadow:2px_2px_20px_#fff]  leading-[4vw]">
+          <div className="text-center">
+            <h1 className="lobster text-[8vw] lg:text-[3.5vw] [text-shadow:2px_2px_20px_#fff] leading-[8vw] lg:leading-[4vw]">
               Noida's Indoor Snow Park —
               <span className="text-[#165FF5]">Open All Year!</span>
             </h1>
@@ -212,14 +212,17 @@ const About = () => {
           <div className="flex flex-col gap-3">
             {aboutArr.map((about,idx) => {
               return (
-                <div key={idx} className="flex items-center gap-4 h-[6vh] w-[40vw] border-none bg-[linear-gradient(to_top,rgba(192,236,250,1),rgba(229,248,255,1),rgba(248,247,250,1))] border rounded-4xl">
-                  <div className="h-[40px] w-[40px] flex justify-center items-center rounded-full bg-[#165FF5]">
+                <div key={idx} className="flex items-center gap-4 h-[4vh] lg:h-[6vh] w-[80vw] lg:w-[40vw] border-none bg-[linear-gradient(to_top,rgba(192,236,250,1),rgba(229,248,255,1),rgba(248,247,250,1))] border rounded-4xl">
+                  <div className="h-[30px] lg:h-[40px] w-[30px] lg:w-[40px] flex justify-center items-center rounded-full bg-[#165FF5]">
                   {about.img}
                   </div>
-                  <h1 className="text-md">{about.text}</h1>
+                  <h1 className="text-xs lg:text-md">{about.text}</h1>
                 </div>
               );
             })}
+          </div>
+          <div className="lg:w-full">
+          <button className="max-md:text-xs bg-linear-to-r from-[#296CEE] to-[#064B8B] px-3 py-2 rounded-2xl text-white">Explore Snow Village</button>
           </div>
         </div>
       </div>

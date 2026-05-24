@@ -40,27 +40,27 @@ const Questions = () => {
     <div className="h-[80vh] w-full relative bg-[linear-gradient(180deg,rgba(238,253,255,1),rgba(183,235,254,1),rgba(248,245,255,1))]">
       <div>
         <img
-          className="absolute z-20 bottom-0 h-[90vh] w-full"
+          className="absolute z-20 bottom-0 h-[30vh] lg:h-[90vh] w-full"
           src="/About-assets/3d-ice.png"
           alt=""
         />
         <img
-          className="h-[17vh] w-[10vw] rotate-y-180 absolute z-20 bottom-[25vh] "
+          className="h-[10vh] lg:h-[17vh] w-[25vw] lg:w-[10vw] rotate-y-180 absolute z-20 bottom-10 lg:bottom-[25vh] "
           src="/Hero-assets/hero-snow-house.png"
           alt="Snow House"
         />
         <img
-          className="absolute h-[15vh] w-[10vw] bottom-[27vh] left-20 object-cover"
+          className="absolute h-[7vh] lg:h-[15vh] z-20 w-[10vw] bottom-13 lg:bottom-[27vh] left-20 lg:object-cover"
           src="/Hero-assets/tree.png"
           alt="Tree"
         />
         <img
-          className=" absolute z-20 h-[15vh] w-[12vw] bottom-[10vh] right-0"
+          className=" absolute z-20 h-[7vh] lg:h-[15vh] w-[20vw] lg:w-[12vw] bottom-5 lg:bottom-[10vh] right-5 lg:right-0"
           src="/Hero-assets/child.png"
           alt="Child"
         />
         <img
-          className="h-[15vh] w-[8vw] absolute bottom-[31vh] right-0"
+          className="h-[10vh] lg:h-[15vh] w-[8vw] absolute bottom-17 lg:bottom-[31vh] right-0"
           src="/About-assets/about-tree.png"
           alt=""
         />
@@ -89,19 +89,23 @@ const Questions = () => {
           </h1>
           <div className="h-[2px] w-10 bg-[#165FF5]"></div>
         </div>
-        <h1 className="lobster text-4xl">
+        <h1 className="lobster text-2xl lg:text-4xl">
           Quik Answers -{" "}
           <span className="text-[#165FF5]">Before You Visit</span>
         </h1>
-        <p className="text-sm">
+        <p className="text-sm max-md:text-center">
           Everything you need to know, answered fast. More questions? Visit
           snowvillage.in.
         </p>
       </div>
-      <div className="absolute bottom-0 z-40 h-[50vh] w-full flex flex-wrap gap-y-0 gap-x-20 justify-center">
-        {questionArr.map((arr,idx) => {
+      <div className="absolute bottom-[10vh] lg:bottom-0 z-40 h-[50vh] w-[90vw] lg:w-full max-md:px-[5vw] flex flex-col lg:flex-row flex-wrap gap-2 lg:gap-y-0 lg:gap-x-20 justify-center">
+        {questionArr.map((arr, idx) => {
           return (
-            <div key={idx} className="h-[7vh] w-[30vw] flex gap-5 px-3 items-center rounded-2xl bg-white/30">
+            <div
+              key={idx}
+              className="h-[4vh] lg:h-[7vh] w-[90vw] lg:w-[30vw] flex gap-5 px-3 justify-between items-center rounded-2xl bg-white/30"
+            >
+              <div className="flex items-center gap-5">
               <div className="bg-[#165FF5] p-1.5 rounded-full">
                 <svg
                   className=""
@@ -121,7 +125,30 @@ const Questions = () => {
                 </svg>
               </div>
 
-              <h1 className="text-md font-light">{arr.text}</h1>
+              <h1 className="text-xs lg:text-md">{arr.text}</h1>
+              </div>
+              <div className=" h-[30px] w-[30px] rounded-full flex justify-center items-center bg-white/40">
+                <svg
+                  width="16"
+                  height="9"
+                  viewBox="0 0 16 9"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <mask id="path-1-inside-1_0_401" fill="white">
+                    <path d="M0 8.43893C0 8.58126 0.0537072 8.72692 0.157962 8.83615C0.366472 9.05462 0.707671 9.05462 0.916181 8.83615L8.05292 1.35877L15.0854 8.72692C15.2939 8.94538 15.6351 8.94538 15.8436 8.72692C16.0521 8.50846 16.0521 8.15097 15.8436 7.93251L8.43203 0.163847C8.22352 -0.0546157 7.88232 -0.0546157 7.67381 0.163847L0.157962 8.03843C0.0505479 8.15097 0 8.29329 0 8.43893Z" />
+                  </mask>
+                  <path
+                    d="M0 8.43893C0 8.58126 0.0537072 8.72692 0.157962 8.83615C0.366472 9.05462 0.707671 9.05462 0.916181 8.83615L8.05292 1.35877L15.0854 8.72692C15.2939 8.94538 15.6351 8.94538 15.8436 8.72692C16.0521 8.50846 16.0521 8.15097 15.8436 7.93251L8.43203 0.163847C8.22352 -0.0546157 7.88232 -0.0546157 7.67381 0.163847L0.157962 8.03843C0.0505479 8.15097 0 8.29329 0 8.43893Z"
+                    fill="#165FF5"
+                  />
+                  <path
+                    d="M0.916181 8.83615L4.53314 12.2883V12.2883L0.916181 8.83615ZM8.05292 1.35877L11.6699 -2.09341L8.05292 -5.88302L4.43595 -2.09341L8.05292 1.35877ZM15.0854 8.72692L11.4684 12.1791V12.1791L15.0854 8.72692ZM15.8436 8.72692L19.4606 12.1791L15.8436 8.72692ZM15.8436 7.93251L12.2259 11.3839L12.2267 11.3847L15.8436 7.93251ZM8.43203 0.163847L12.0497 -3.28757L12.049 -3.28834L8.43203 0.163847ZM7.67381 0.163847L11.2908 3.61603L7.67381 0.163847ZM0.157962 8.03843L-3.459 4.58625L0.157962 8.03843ZM0 8.43893H-5C-5 9.79962 -4.49645 11.2014 -3.459 12.2883L0.157962 8.83615L3.77492 5.38397C4.60386 6.25247 5 7.3629 5 8.43893H0ZM0.157962 8.83615L-3.459 12.2883C-1.28075 14.5706 2.3549 14.5706 4.53314 12.2883L0.916181 8.83615L-2.70078 5.38397C-0.939556 3.53868 2.0137 3.53868 3.77492 5.38397L0.157962 8.83615ZM0.916181 8.83615L4.53314 12.2883L11.6699 4.81096L8.05292 1.35877L4.43595 -2.09341L-2.70078 5.38397L0.916181 8.83615ZM8.05292 1.35877L4.43595 4.81096L11.4684 12.1791L15.0854 8.72692L18.7024 5.27474L11.6699 -2.09341L8.05292 1.35877ZM15.0854 8.72692L11.4684 12.1791C13.6467 14.4613 17.2823 14.4613 19.4606 12.1791L15.8436 8.72692L12.2267 5.27474C13.9879 3.42945 16.9411 3.42945 18.7024 5.27474L15.0854 8.72692ZM15.8436 8.72692L19.4606 12.1791C21.5131 10.0286 21.5131 6.63086 19.4606 4.48033L15.8436 7.93251L12.2267 11.3847C10.5911 9.67109 10.5911 6.98834 12.2267 5.27474L15.8436 8.72692ZM15.8436 7.93251L19.4613 4.4811L12.0497 -3.28757L8.43203 0.163847L4.81433 3.61526L12.2259 11.3839L15.8436 7.93251ZM8.43203 0.163847L12.049 -3.28834C9.87074 -5.57055 6.23509 -5.57055 4.05684 -3.28834L7.67381 0.163847L11.2908 3.61603C9.52954 5.46132 6.57629 5.46132 4.81506 3.61603L8.43203 0.163847ZM7.67381 0.163847L4.05684 -3.28834L-3.459 4.58625L0.157962 8.03843L3.77492 11.4906L11.2908 3.61603L7.67381 0.163847ZM0.157962 8.03843L-3.459 4.58625C-4.52377 5.70184 -5 7.11205 -5 8.43893H0H5C5 9.47453 4.62487 10.6001 3.77492 11.4906L0.157962 8.03843Z"
+                    fill="#165FF5"
+                    mask="url(#path-1-inside-1_0_401)"
+                  />
+                </svg>
+              </div>
             </div>
           );
         })}

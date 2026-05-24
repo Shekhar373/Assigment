@@ -52,56 +52,56 @@ const Experience = () => {
           {/* overlay first so it's under images (z-order!) */}
           <div className="absolute inset-0 z-20 bg-white/60"></div>
           <img
-            className="absolute z-10 bottom-10 h-[90vh] w-full"
+            className="absolute z-10 bottom-10 h-[40vh] lg:h-[90vh] w-full"
             src="/About-assets/3d-ice.png"
             alt=""
           />
           <img
-            className="absolute z-10 top-0 -rotate-10 right-0  h-[60vh] w-[40vw]"
+            className="absolute z-10 top-0  hidden lg:visible -rotate-10 right-0 h-[40vh] lg:h-[60vh] w-[40vw]"
             src="/About-assets/3d-ice.png"
             alt=""
           />
           <img
-            className="absolute z-10 top-0 rotate-15 left-0  h-[60vh] w-[40vw]"
+            className="absolute z-10 top-0 hidden lg:visible rotate-15 left-0 h-[40vh] lg:h-[60vh] w-[40vw]"
             src="/About-assets/3d-ice.png"
             alt=""
           />
         </div>
         <img
-          className="absolute h-[12vh] w-[10vw] top-[35vh]  -right-5 object-cover"
+          className="absolute h-[8vh] lg:h-[12vh] w-[15vw] lg:w-[10vw] bottom-[20vh] max-md:z-20 lg:top-[35vh] right-0  lg:-right-5 lg:object-cover"
           src="/Hero-assets/tree.png"
           alt="Tree"
         />
         <img
-          className="h-[20vh] w-[15vw] rotate-y-180 object-cover absolute z-20 bottom-[27vh] -left-10"
+          className="h-[15vh] lg:h-[20vh] w-[25vw] lg:w-[15vw] rotate-y-180 lg:object-cover absolute z-20 bottom-[10vh] lg:bottom-[27vh] lg:-left-10"
           src="/About-assets/about-house.png"
           alt=""
         />
         <img
-          className="absolute h-[12vh] w-[10vw] top-[42vh]  left-5 object-cover"
+          className="absolute h-[8vh] lg:h-[12vh] w-[15vw] lg:w-[10vw] bottom-[15vh] lg:top-[42vh] left-15 lg:left-5 object-cover"
           src="/Hero-assets/tree.png"
           alt="Tree"
         />
         <img
-          className="h-[15vh] w-[6vw] absolute z-20 bottom-[20vh] right-[10vw]"
+          className="h-[8vh] lg:h-[15vh] w-[10vw] lg:w-[6vw] absolute z-20 bottom-[12vh] lg:bottom-[20vh] right-[10vw]"
           src="/experience/surfing.png"
           alt=""
         />
 
         <img
-          className="h-[10vh] w-[6vw] absolute z-20 bottom-[5vh] right-[25vw]"
+          className="lg:h-[10vh] h-[7vh] w-[10vw] lg:w-[6vw] absolute z-20 bottom-[5vh] right-[25vw]"
           src="/experience/crying-panguin.png"
           alt=""
         />
 
         <img
-          className="h-[15vh] w-[10vw] absolute z-20 bottom-[8vh] left-[12vw]"
+          className="lg:h-[15vh] h-[7vh] w-[15vw] lg:w-[10vw] absolute z-20 bottom-[8vh] left-[20vw] lg:left-[12vw]"
           src="/experience/girl-surfing.png"
           alt=""
         />
       </div>
       <div className="flex justify-center w-full h-full">
-        <div className="h-[50vh] w-[70vw] pt-5 px-20 rounded-3xl flex flex-col items-center gap-5 absolute top-0 z-30 bg-[linear-gradient(to_top,rgba(192,236,250,1),rgba(229,248,255,1),rgba(248,247,250,1))]">
+        <div className="h-[50vh] w-[80vw] lg:w-[70vw] pt-5 px-5 lg:px-20 rounded-3xl flex flex-col items-center gap-5 absolute top-0 z-30 bg-[linear-gradient(to_top,rgba(192,236,250,1),rgba(229,248,255,1),rgba(248,247,250,1))]">
           <div className="flex flex-col items-center">
             <svg
               className=""
@@ -125,7 +125,7 @@ const Experience = () => {
               <div className="h-[2px] w-7 bg-[#165FF5]"></div>
             </div>
           </div>
-          <h1 className="lobster text-5xl text-center">
+          <h1 className="lobster text-2xl lg:text-5xl text-center">
             One Hour of Pure Snow <br />{" "}
             <span className="text-[#165FF5]">Fun!</span>
           </h1>
@@ -138,17 +138,17 @@ const Experience = () => {
           </p>
         </div>
       </div>
-      <div className="h-[30vh] flex justify-center gap-20 w-full absolute z-40 bottom-[20vh]">
+      <div className="h-[30vh] flex justify-center gap-2 lg:gap-20 w-full absolute z-40 bottom-[20vh]">
         {expArr.map((arr, idx) => {
           return (
             <div
               key={idx}
-              className="h-[25vh] rounded-2xl p-5 flex flex-col justify-center items-center text-center w-[15vw] bg-[linear-gradient(to_bottom,rgba(192,236,250,1),rgba(229,248,255,1),rgba(248,247,250,1))]"
+              className="h-[25vh] rounded-2xl p-5 flex flex-col justify-center items-center text-center w-[30vw] lg:w-[15vw] bg-[linear-gradient(to_bottom,rgba(192,236,250,1),rgba(229,248,255,1),rgba(248,247,250,1))]"
             >
               <div className="bg-[#165FF5] p-1.5 rounded-full">
               {arr.img}
               </div>
-              <h1 className="text-sm font-bold">{arr.heading}</h1>
+              <h1 className="lg:text-sm text-xs font-bold">{arr.heading}</h1>
               <h1 className="text-xs">{arr.text}</h1>
             </div>
           );

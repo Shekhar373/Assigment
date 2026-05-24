@@ -24,12 +24,12 @@ const FreshSnow = () => {
       </div>
 
       <img
-        className="absolute z-20 h-[60vh] rounded-2xl w-[30vw] top-[15vh] left-[5vw]"
+        className="absolute z-20 h-[40vh] lg:h-[60vh] rounded-2xl w-[80vw] lg:w-[30vw] top-[15vh] left-[5vw]"
         src="/Fresh-snow/painting.jpg"
         alt=""
       />
 
-      <div className="h-[20vh] w-[45vw] flex justify-center shadow-[0_0_10px_rgba(22,95,245,0.5)] items-center z-20 right-[10vw] top-[35vh] rounded-3xl absolute bg-[#001A45]">
+      <div className="h-[20vh] w-[80vw] lg:w-[45vw] flex justify-center shadow-[0_0_10px_rgba(22,95,245,0.5)] items-center z-20 right-[10vw] top-[5vh] lg:top-[35vh] rounded-3xl absolute bg-[#001A45]">
         <h1 className="text-2xl text-white">
           Not Old. Not Stored.{" "}
           <span className="lobster text-[#165FF5]">Just Fresh Snow.</span>{" "}
