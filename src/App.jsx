@@ -11,7 +11,7 @@ const App = () => {
   return (
     <>
    
-    <div className='relative'>
+    <div className='relative overflow-x-hidden'>
     <div className='absolute z-999'>
         <Navbar />
       </div>

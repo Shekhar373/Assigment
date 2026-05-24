@@ -75,7 +75,7 @@ const Hero = () => {
       </div>
 
       {/* HERO CONTENT */}
-      <div className="absolute z-20 text-black flex flex-col gap-5 top-[25vh] left-20 h-[50vh] w-[50vw]">
+      <div className="absolute z-20 flex flex-col gap-5 top-[25vh] left-20 h-[50vh] w-[50vw]">
         <h1 className="lobster text-[#001A45] [text-shadow:2px_2px_20px_#fff] text-[6vw] leading-[5vw]">
           Noida's <span className="text-[#165FF5]">Coolest Spot</span>
           <br /> Literally!
