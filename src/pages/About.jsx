@@ -153,14 +153,14 @@ const About = () => {
         </div>
         <div>
           <img
-            className="h-[15vh] w-[10vw] object-cover absolute bottom-[10vh] left-[32vw]"
+            className="h-[15vh] w-[10vw] hidden lg:visible lg:object-cover absolute bottom-[10vh] left-[32vw]"
             src="/About-assets/about-tree.png"
             alt=""
           />
         </div>
         <div>
           <img
-            className="h-[25vh] lg:h-[50vh] w-[15vw] object-cover absolute z-10 bottom-[30vh] -left-25"
+            className="h-[25vh] lg:h-[50vh] w-[15vw] lg:object-cover absolute z-10 bottom-[30vh] -left-25"
             src="/About-assets/about-tree.png"
             alt=""
           />

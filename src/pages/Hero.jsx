@@ -149,19 +149,29 @@ const Hero = () => {
           {features.map((feature, idx) => (
             <div
               key={feature.title}
-              className={`flex flex-col justify-between w-1/3 pt-5 px-4 max-md:gap-2 items-center ${
-                idx === 1
-                  ? "relative px-3 w-1/3 before:absolute before:inset-y-3 before:left-0 before:w-[2px] before:bg-linear-to-b before:from-transparent before:via-[#d4e2fa] before:to-transparent after:absolute after:inset-y-3 after:right-0 after:w-[2px] after:bg-gradient-to-b after:from-transparent after:via-[#d4e2fa] after:to-transparent"
-                  : "w-1/3"
-           
-              }`}
+              className={`
+                flex flex-col justify-between items-center
+                w-full sm:w-1/3
+                pt-3 sm:pt-5 
+                px-2 sm:px-4
+                gap-1 sm:gap-2
+                ${idx === 1
+                  ? `relative
+                      before:absolute before:inset-y-2 sm:before:inset-y-3 before:left-0 
+                      before:w-[1.5px] sm:before:w-[2px] before:bg-gradient-to-b before:from-transparent before:via-[#d4e2fa] before:to-transparent
+                      after:absolute after:inset-y-2 sm:after:inset-y-3 after:right-0 
+                      after:w-[1.5px] sm:after:w-[2px] after:bg-gradient-to-b after:from-transparent after:via-[#d4e2fa] after:to-transparent`
+                  : ""
+                }
+              `}
             >
-              <div className="bg-white/45 rounded-full h-[35px] w-[35px] flex justify-center items-center">
+              <div className="bg-white/45 rounded-full h-[32px] w-[32px] sm:h-[35px] sm:w-[35px] flex justify-center items-center">
                 {feature.icon}
               </div>
-              <h2 className="font-medium max-md:text-sm">{feature.title}</h2>
-              <span className="text-xs lg:text-sm">{feature.desc}</span>
+              <h2 className="font-medium text-xs sm:text-sm md:text-base text-center">{feature.title}</h2>
+              <span className="text-[10px] sm:text-xs md:text-sm text-center">{feature.desc}</span>
             </div>
+       
           ))}
         </div>
       </div>
