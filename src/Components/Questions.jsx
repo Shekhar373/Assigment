@@ -103,7 +103,7 @@ const Questions = () => {
           return (
             <div
               key={idx}
-              className="h-[4vh] lg:h-[7vh] w-[90vw] lg:w-[30vw] flex gap-5 px-3 justify-between items-center rounded-2xl bg-white/30"
+              className="h-[4vh] lg:h-[7vh] w-[90vw] lg:w-[35vw] flex gap-5 px-3 justify-between items-center rounded-2xl bg-white/40"
             >
               <div className="flex items-center gap-5">
               <div className="bg-[#165FF5] p-1.5 rounded-full">
@@ -125,7 +125,7 @@ const Questions = () => {
                 </svg>
               </div>
 
-              <h1 className="text-xs lg:text-md">{arr.text}</h1>
+              <h1 className="text-xs lg:text-lg">{arr.text}</h1>
               </div>
               <div className=" h-[30px] w-[30px] rounded-full flex justify-center items-center bg-white/40">
                 <svg

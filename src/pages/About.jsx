@@ -216,7 +216,7 @@ const About = () => {
                   <div className="h-[30px] lg:h-[40px] w-[30px] lg:w-[40px] flex justify-center items-center rounded-full bg-[#165FF5]">
                   {about.img}
                   </div>
-                  <h1 className="text-xs lg:text-md">{about.text}</h1>
+                  <h1 className="text-xs lg:text-lg">{about.text}</h1>
                 </div>
               );
             })}
