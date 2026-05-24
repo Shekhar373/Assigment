@@ -81,7 +81,7 @@ const features = [
 const Hero = () => {
   return (
     <div
-      className="h-[80vh] lg:h-screen relative z-20 w-full bg-cover bg-center overflow-hidden"
+      className="h-[90vh] lg:h-screen relative z-20 w-full bg-cover bg-center overflow-hidden"
       style={{ backgroundImage: "url(/Hero-assets/hero-background.jpg)" }}
     >
       <div className="absolute z-20 bottom-0 right-5 lg:right-20">
@@ -133,7 +133,7 @@ const Hero = () => {
       </div>
 
       {/* HERO CONTENT */}
-      <div className="absolute z-20 flex flex-col gap-5 top-[10vh] left-10 lg:left-20 h-[50vh] w-[80vw] lg:w-[50vw]">
+      <div className="absolute z-20 flex flex-col gap-5 top-[20vh] left-10 lg:left-20 h-[50vh] w-[80vw] lg:w-[50vw]">
         <h1 className="lobster text-[#001A45] [text-shadow:2px_2px_20px_#fff] text-[10vw] lg:text-[6vw] leading-[10vw] lg:leading-[5vw]">
           Noida's <span className="text-[#165FF5]">Coolest Spot</span>
           <br /> Literally!
@@ -149,7 +149,7 @@ const Hero = () => {
           {features.map((feature, idx) => (
             <div
               key={feature.title}
-              className={`flex flex-col w-1/3 px-4 max-md:gap-2 items-center ${
+              className={`flex flex-col justify-between w-1/3 px-4 max-md:gap-2 items-center ${
                 idx === 1
                   ? "relative px-3 w-1/3 before:absolute before:inset-y-3 before:left-0 before:w-[2px] before:bg-linear-to-b before:from-transparent before:via-[#d4e2fa] before:to-transparent after:absolute after:inset-y-3 after:right-0 after:w-[2px] after:bg-gradient-to-b after:from-transparent after:via-[#d4e2fa] after:to-transparent"
                   : "w-1/3"

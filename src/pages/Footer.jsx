@@ -50,7 +50,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-row lg:flex-col">
+        <div className="flex flex-row lg:gap-25">
           {/* Quick Links */}
         <div className="w-1/2 lg:w-full md:w-[13vw] text-xs md:text-sm font-medium flex flex-col gap-2 mb-4 md:mb-0 items-center md:items-start text-center md:text-left">
           <h1 className="text-base md:text-md font-bold text-[#165FF5]">

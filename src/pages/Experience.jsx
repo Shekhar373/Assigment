@@ -143,7 +143,7 @@ const Experience = () => {
           return (
             <div
               key={idx}
-              className="h-[25vh] rounded-2xl p-5 flex flex-col justify-center items-center text-center w-[30vw] lg:w-[15vw] bg-[linear-gradient(to_bottom,rgba(192,236,250,1),rgba(229,248,255,1),rgba(248,247,250,1))]"
+              className="h-[25vh] rounded-2xl p-5 flex flex-col justify-around items-center text-center w-[30vw] lg:w-[15vw] bg-[linear-gradient(to_bottom,rgba(192,236,250,1),rgba(229,248,255,1),rgba(248,247,250,1))]"
             >
               <div className="bg-[#165FF5] p-1.5 rounded-full">
               {arr.img}

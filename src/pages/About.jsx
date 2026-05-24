@@ -103,8 +103,8 @@ const About = () => {
 
   return (
     <>
-      <div className="h-screen w-full bg-[linear-gradient(180deg,rgba(238,253,255,1),rgba(183,235,254,1),rgba(248,245,255,1))] relative">
-        <div className="relative h-screen w-full">
+      <div className="h-[80vh] lg:h-screen w-full bg-[linear-gradient(180deg,rgba(238,253,255,1),rgba(183,235,254,1),rgba(248,245,255,1))] relative">
+        <div className="relative h-[80vh] lg:h-screen w-full">
           <img src="/footer/footer-background.jpg" className="w-full h-full" />
 
           {/* overlay */}
@@ -119,7 +119,7 @@ const About = () => {
         </div>
         <div>
           <img
-            className="h-[10vh] lg:h-[25vh] w-[15vw] lg:w-[10vw] lg:object-cover absolute z-20 bottom-[25vh] lg:bottom-[20vh] left-[10vw]"
+            className="h-[10vh] lg:h-[25vh] w-[15vw] lg:w-[10vw] lg:object-cover absolute z-20 bottom-[5vh] lg:bottom-[20vh] left-[10vw]"
             src="/About-assets/blue-penguin.png"
             alt=""
           />
@@ -153,7 +153,7 @@ const About = () => {
         </div>
         <div>
           <img
-            className="h-[15vh] w-[10vw] object-cover absolute bottom-[30vh] left-[32vw]"
+            className="h-[15vh] w-[10vw] object-cover absolute bottom-[10vh] left-[32vw]"
             src="/About-assets/about-tree.png"
             alt=""
           />
