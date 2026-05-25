@@ -145,7 +145,7 @@ const Hero = () => {
             Spectrum Phase 2, Noida.
           </span>
         </p>
-        <div className="h-auto absolute -left-10 lg:-left-15 top-[22vh] lg:top-[33vh] w-screen lg:w-full flex  justify-between items-center text-center">
+        <div className="h-auto absolute -left-10 lg:-left-15 top-[26vh] lg:top-[33vh] w-screen lg:w-full flex  justify-between items-center text-center">
           {features.map((feature, idx) => (
             <div
               key={feature.title}
